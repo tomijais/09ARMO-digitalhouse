@@ -51,8 +51,6 @@ switch (accion) {
 
   case "filtrar":
     let tareaFiltrada = archivoTareas.filtrarPorEstado(process.argv[3]);
-
-
     for (let i = 0; i < tareaFiltrada.length; i++) {
       console.log(
         i + ". " + tareaFiltrada[i].titulo + " - " + tareaFiltrada[i].estado
