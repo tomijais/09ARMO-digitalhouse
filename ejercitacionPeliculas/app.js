@@ -3,8 +3,8 @@ const fs = require('fs');
 
 const peliculas = fs.readFileSync("./peliculas.json", "utf-8");
 const peliculasPARSE = JSON.parse(peliculas)
-const teatros = fs.readFileSync("./theaters.json","utf-8");
-const teatrosPARSE = JSON.parse(teatros)
+const salas = fs.readFileSync("./salas.json","utf-8");
+const salasPARSE = JSON.parse(salas)
 const faqs = fs.readFileSync("./faqs.json","utf-8");
 const faqsPARSE = JSON.parse(faqs)
 
@@ -53,17 +53,58 @@ http.createServer((req, res) => {
 
 			break;
 		case '/mas-votadas':
-			res.end('Más Votadas');
+			res.write('<h1>Peliculas mas votadas:<h1/>')
+			let contadorPeliculasMasVotadas = 0;
+			let sumaDeRatingsPeliculasMasVotadas = 0;
+			for (let i = 0; i < peliculasPARSE.length; i++) {
+
+				if(peliculasPARSE[i].vote_average >= 7){
+					res.write(`<h2>${peliculasPARSE[i].title}</h2>`);
+					contadorPeliculasMasVotadas++
+					sumaDeRatingsPeliculasMasVotadas = parseInt(sumaDeRatingsPeliculasMasVotadas) + peliculasPARSE[i].vote_average
+				}
+			}
+			res.write(`<h3>Tenemos ${contadorPeliculasMasVotadas} peliculas que tienen un rating mayor o igual a 7</h3>`);
+			res.write(`<h4>El promedio de rating de estas peliculas es de ${sumaDeRatingsPeliculasMasVotadas/contadorPeliculasMasVotadas}</h4>`);
+
+
+			for (let i = 0; i < peliculasPARSE.length; i++) {
+				res.write(`<h5>${peliculasPARSE[i].title}</h5>`);
+				res.write(`<h6>${peliculasPARSE[i].overview}</h6>`);
+				res.write(`<p>Puntaje: ${peliculasPARSE[i].vote_average}<p/>`)
+				
+			}
+
 			break;
 		case '/sucursales':
-			res.end('Sucursales');
+			res.write('<h1>Sucursales<h1/>');
+			res.write(`<h2>Tenemos ${salasPARSE.length} salas en total</h2>`);
+
+			for (let i = 0; i < salasPARSE.length; i++) {
+				res.write(`<h3>${salasPARSE[i].name}</h3>`);
+				res.write(`<h4>${salasPARSE[i].address}</h4>`);
+				res.write(`<h5>Puntaje: ${salasPARSE[i].description}<h5/>`)
+				
+			}
+			
+
 			break;
 		case '/contacto':
-			res.end('Contacto');
+			res.write('<h1>Contáctanos<h1/>');
+			res.end('<p>¿Tenés algo para contarnos? Nos encanta escuchar a nuestros clientes. Si deseas contactarnos podés escribirnos al siguiente email: dhmovies@digitalhouse.com o en las redes sociales. Envianos tu consulta, sugerencia o reclamo y será respondido a la brevedad posible. Recordá que también podes consultar la sección de Preguntas Frecuentes para obtener respuestas inmediatas a los problemas más comunes.<p>')
+
+
 			break;
 		case '/preguntas-frecuentes':
-			res.end(faqs);
-			break;
+			res.write('<h1>Preguntas Frecuentes<h1/>');
+			res.write(`<h2>El total de preguntas es de: ${faqsPARSE.length}<h2/>`)
+
+
+			for (let i = 0; i < faqsPARSE.length; i++) {
+				res.write(`<h3>${faqsPARSE[i].faq_title}</h3>`);
+				res.write(`<h4>${faqsPARSE[i].faq_answer}</h4>`);
+			}
+			break;			
 		default:
 			res.end('404 not found')
 	}
