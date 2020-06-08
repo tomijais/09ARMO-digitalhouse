@@ -19,7 +19,16 @@ let heroesController = {
         
     },
     mostrarDetalleConBio:function(req,res){
-        res.send('ok')
+        let idHeroe = req.params.id;
+        let vinoOk = req.params.ok
+        if(idHeroe > 0 && idHeroe < heroesPARSE.length && vinoOk === "ok"){
+            res.send(`${heroesPARSE[idHeroe].nombre} <br> ${heroesPARSE[idHeroe].resenia}"​`)
+        }else if(idHeroe > 0 && idHeroe < heroesPARSE.length){
+            res.send('​"Lamento que no desees saber más de mi :(".')
+        }else{
+
+           res.send('No encontramos un héroe para mostrarte su biografía')
+        }
     },
 }
 
