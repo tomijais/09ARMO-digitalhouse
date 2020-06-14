@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&family=Work+Sans:wght@300&display=swap');
+
+
+
+body{
+    background-image: url('../img/emilia-home.jpg');
+    background-position: right;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 60px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+
+.emilia-cole{
+    font-family: 'Work Sans', sans-serif;
+    text-indent: 60px;
+
+    line-height: 6px;
+    font-size: 29px;
+}
+
+
+
+
+ul li{
+    list-style-type: none;
+    color: #666;
+    text-transform: uppercase;
+    line-height: 33px;
+
+    
+}
+
+a{
+    text-decoration: none;
+    color: #666; 
+}
+a i{
+    color:black;
+    
+}
