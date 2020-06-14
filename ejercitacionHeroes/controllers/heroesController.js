@@ -1,6 +1,5 @@
 const fs = require('fs')
-const  listaDeHeroes = fs.readFileSync(
-    'C:/Users/Tomas/Documents/09ARMO/ejercitacionHeroes/heroes.json', 'utf-8')
+const  listaDeHeroes = fs.readFileSync('heroes.json', 'utf-8')
 let heroesPARSE = JSON.parse(listaDeHeroes)
 let heroesController = {
     index:function(req,res){

@@ -1,5 +1,5 @@
 const fs = require('fs')
-const productosPARSE = JSON.parse(fs.readFileSync('C:/Users/Tomas/Documents/09ARMO/adelantoEcommerce/productos.json'))
+const productosPARSE = JSON.parse(fs.readFileSync('productos.json'))
 
 let productosController = {
     id: function(req,res){
