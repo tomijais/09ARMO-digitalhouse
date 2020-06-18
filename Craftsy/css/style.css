@@ -1,0 +1,170 @@
+/*=============
+ - ESTILOS GENERALES
+=============*/
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../img/bg-2.png');
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+width: 1140px;
+margin: 0 auto;
+}
+
+/*=============
+ - HEADER
+=============*/
+
+header{
+    background-color: #ef4c27;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+header div.logo{
+    width: 10%;
+    float: left;
+}
+
+header nav{
+
+    float: right;    
+    width: 90%;
+}
+
+header nav ul{
+    margin-top: 15px;
+    padding: 0;
+}
+
+header ul.nav1{
+    float: left;
+}
+header ul.nav2{
+    float: right;
+}
+
+header nav ul li{
+    float: left;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/*=============
+ - PRODUCTOS
+=============*/
+
+.productos{
+    width: 800px;
+    background-color: white;
+    float: left;
+    padding: 10px;
+
+}
+.productos article{
+    width: 385px;
+    float: left;
+    margin-right: 10px;
+}
+
+.productos article:nth-of-type(even){
+    margin-right: 0;
+}
+
+.productos article img{
+    width: 100%;
+}
+.productos article h3{
+    margin-top: 10px;
+}
+.productos article p{
+    margin: 10px 0;
+}
+.productos article a{
+    display: inline-block;
+    background-color: #ef4c27;
+    color: white;
+    text-decoration: none;
+    padding: 9px;
+    margin-bottom: 10px;
+}  
+
+/*=============
+ - DE COSTADO
+=============*/
+
+.deCostado{
+    width: 320px;
+    float: right;
+}
+
+.deCostado .tutoriales{
+    margin-bottom: 20px;
+}
+.deCostado .tutoriales h2{
+    border: 2px solid #acd8e6;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.deCostado .tutoriales article{
+    background-color: white;
+    border: 2px solid #acd8e6;
+    border-bottom: 0;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.deCostado .tutoriales article:last-child{
+    border: 2px solid #acd8e6;
+}
+
+.deCostado .tutoriales article img{
+    float: left;
+    margin-right: 10px;
+}
+.deCostado .tutoriales article p{
+    float: left;
+    width: 120px;
+    margin-top: 10px;
+
+}
+
+
+
+/*=============
+ - PUBLICIDAD
+=============*/
+
+
+
+
+.deCostado .publicidad h2{
+    border: 2px solid #acd8e6;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px; 
+}
+.deCostado .publicidad article{
+    background-color: white;
+    padding: 10px;
+    border: 2px solid #acd8e6;
+    border-bottom: 0;
+}
+
+.deCostado .publicidad article:last-child {
+    border: 2px solid #acd8e6;
+}

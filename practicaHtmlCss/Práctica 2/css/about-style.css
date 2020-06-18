@@ -5,7 +5,6 @@
     text-align: right;
     background-color: rgba(255, 255, 255, 0.4);
     line-height: 33px;
-    line-height: -33px;
     text-transform: uppercase;
 }
 
@@ -15,6 +14,7 @@ body{
     background-position: top right;
     background-repeat: no-repeat;
     font-family: 'Open Sans', sans-serif;
+    margin-left: 150px;
 }
 
 ul li{
