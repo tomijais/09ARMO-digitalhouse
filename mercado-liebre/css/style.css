@@ -1,0 +1,130 @@
+/* ==================
+- VARIABLES
+================== */
+
+:root {
+    --color-amarillo: #EAC926;
+    --color-gris-claro: #ebebeb;
+    --color-gris-oscuro: #666666;
+    --color-azul: #03264C;
+    --border-radius: 4px;
+}
+
+/* ==================
+- IMPORTS
+================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* ==================
+- GENERAL
+================== */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* ==================
+- HEADER
+================== */
+
+header {
+    background-color: var(--color-amarillo);
+    justify-content: space-between;
+    padding: 10px;
+}
+header a.logo {}
+header a.logo img {
+    height: 34px;
+}
+header form {
+    height: 40px;
+    border: 1px solid var(--color-gris-claro);
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 0 8px;
+}
+header form input[type='text'] {
+    height: 34px;
+    background: none;
+    border: 0;
+}
+header form input[type='text']:focus {
+    outline: none;
+}
+header form button {
+    background: none;
+    border: 0;
+    border-left: 2px solid var(--color-gris-claro);
+    color: var(--color-gris-oscuro);
+}
+header p.cuotas {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+header nav button.burger {
+    background-color: var(--color-azul);
+    border: 0;
+    padding: 6px 10px;
+    border-radius: var(--border-radius);
+}
+header nav button.burger a {
+    color: white;
+}
+header nav ul {
+    display: none;
+    padding: 0;
+}
+header nav ul.ventas {}
+header nav ul.usuario {}
+header nav ul li {}
+header nav ul li a {
+    color: black;
+}
+
+@media (min-width: 768px) {
+    header form {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+        margin: 0 20px;
+    }
+    header form input[type='text'] {
+        width: 100%;
+    }
+    header nav button.burger {
+        display: none;
+    }
+    header nav {
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    header nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+    header nav ul li {
+        margin-right: 10px;
+    }
+    header nav ul li:last-child {
+        margin-right: 0;
+    }
+    header p.cuotas {
+        width: 180px;
+        margin: 0;
+        text-align: right;
+        line-height: 20px;
+    }
+}
