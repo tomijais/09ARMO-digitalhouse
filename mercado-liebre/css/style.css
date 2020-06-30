@@ -23,11 +23,11 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    padding: 0;
 }
 
 body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: var(--color-gris-claro);
 }
 
 /* ==================
@@ -36,12 +36,14 @@ body {
 
 header {
     background-color: var(--color-amarillo);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
 }
 header a.logo {}
 header a.logo img {
-    height: 34px;
+    height: 40px;
 }
 header form {
     height: 40px;
@@ -128,3 +130,42 @@ header nav ul li a {
         line-height: 20px;
     }
 }
+
+/* ==================
+- BANNER
+================== */
+
+section.banner img{
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+/* ==================
+- PRODUCTOS
+================== */
+
+div.container section{
+}
+
+div.container section h2{
+    color: var(--color-gris-oscuro);
+    margin-left: 16px;
+
+}
+
+div.container section article{
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 50px;
+
+}
+
+div.container section article img{
+    width: 100%;
+    border-bottom: 2px solid var(--color-gris-claro);
+
+}
+div.container section article h3{
+}
+
+div.container section article h4{}
