@@ -1,92 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mercado Liebre Argentina</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="./css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mercado Liebre Argentina</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
-
-	<div class="container">
-	<header>
-		<div class="d-flex flex-wrap justify-content-between">
-            <a href="" class="logo"><img src="materiales/images/logo-mercado-liebre.svg" alt=""></a>
-            <form action="">
-                <input type="text" placeholder="Buscar productos, marcas y más...">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
-            <p class="cuotas"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-            <nav>
-                <button class="burger"><a href="#"><i class="fas fa-bars"></i></a></button>
-                <ul class="ventas">
-                    <li><a href="">Ofertas</a></li>
-                    <li><a href="">Tiendas Oficiales</a></li>
-                    <li><a href="">Vender</a></li>
-                    <li><a href="">Ayuda</a></li>
-                </ul>
-                <ul class="usuario">
-                    <li><a href="">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
-                    <li><a href="">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                    <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-                </ul>
-            </nav>
+  <body>
+    <div class="header">
+      <header class="container">
+        <div class="d-flex flex-wrap justify-content-between">
+          <a href="" class="logo"
+            ><img src="materiales/images/logo-mercado-liebre.svg" alt=""
+          /></a>
+          <form action="">
+            <input
+              type="text"
+              placeholder="Buscar productos, marcas y más..."
+            />
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <p class="cuotas">
+            <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin
+            tarjeta de crédito
+          </p>
+          <nav>
+            <button class="burger">
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </button>
+            <ul class="ventas">
+              <li><a href="">Ofertas</a></li>
+              <li><a href="">Tiendas Oficiales</a></li>
+              <li><a href="">Vender</a></li>
+              <li><a href="">Ayuda</a></li>
+            </ul>
+            <ul class="usuario">
+              <li>
+                <a href=""
+                  >Creá tu cuenta <i class="far fa-address-card"></i
+                ></a>
+              </li>
+              <li>
+                <a href="">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+              </li>
+              <li>
+                <a href=""
+                  >Mis compras <i class="fas fa-shopping-basket"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
-	</header>
+      </header>
+    </div>
 
-	<section class="banner">
-		<img src="materiales/images/img-home-banner.jpg" alt="">
-	</section>
+    <section class="banner">
+      <img src="materiales/images/img-home-banner.jpg" alt="" />
+    </section>
 
-	<div class="container">
-		<section class="row"> 
-			<h2 class="seccion">Basado en tu última visita</h2>
-			<article class="col-12 col-md-6 col-xl-3 d-flex flex-wrap">
-				<img src="materiales/images/img-cafetera-moulinex.jpg" alt="">
-				<h3>$6.770</h3>
-				<h4>40% OFF</h4>
-				<img src="" alt="">
-			</article>
-			<article class="col-12 col-md-6 col-xl-3">
-				<img src="materiales/images/img-macbook-pro-2019.jpg" alt="">
-				<h3>mac</h3>
-				<h4>precio</h4>
-				<img src="" alt="">
-			</article>
-		</section>
-	</div>
+    <div class="container">
+      <section class="container productos">
+        <h2>Ofertas</h2>
+        <div class="row ">
+          <article class="col-12 col-md-6 col-xl-3 d-flex flex-wrap justify-content-between ">
+            <img src="materiales/images/img-cafetera-moulinex.jpg" alt="" />
+            <h3>$6.770</h3>
+            <h4>40% OFF</h4>
+            <img src="" alt="" />
+          </article>
+          <article class="col-12 col-md-6 col-xl-3 d-flex flex-wrap justify-content-between">
+            <img src="materiales/images/img-macbook-pro-2019.jpg" alt="" />
+            <h3>$150.970</h3>
+            <h4>10% OFF</h4>
+            <img src="" alt="" />
+		  </article>
+		  <article class="col-12 col-md-6 col-xl-3 d-flex flex-wrap justify-content-between">
+            <img src="materiales/images/img-tv-samsung-smart.jpg" alt="" />
+            <h3>$54.230</h3>
+            <h4></h4>
+            <img src="" alt="" />
+          </article>
+          <article class="col-12 col-md-6 col-xl-3 d-flex flex-wrap justify-content-between">
+            <img src="materiales/images/img-samsung-galaxy-s10.jpg" alt="" />
+            <h3>$89.410</h3>
+            <h4>20% OFF</h4>
+            <img src="" alt="" />
+          </article>
+        </div>
+      </section>
+    </div>
 
-	<div class="container">
-		<section class="row">
-			<h2></h2>
-			<article class="col-12 col-md-6 col-xl-3">
-				<img src="" alt="">
-				<h3></h3>
-				<h4></h4>
-				<img src="" alt="">
-			</article>
-			<article class="col-12 col-md-6 col-xl-3">
-				<img src="" alt="">
-				<h3></h3>
-				<h4></h4>
-				<img src="" alt="">
-			</article>
-		</section>
-	</div>
+    <div class="container">
+      <section class="container productos">
+        <h2>Basado en tu última visita</h2>
+        <div class="row">
+          <article class="col-12 col-md-6 col-xl-3 d-flex flex-wrap justify-content-between">
+            <img src="materiales/images/img-tv-samsung-smart.jpg" alt="" />
+            <h3>$54.230</h3>
+            <h4></h4>
+            <img src="" alt="" />
+          </article>
+          <article class="col-12 col-md-6 col-xl-3 d-flex flex-wrap justify-content-between">
+            <img src="materiales/images/img-samsung-galaxy-s10.jpg" alt="" />
+            <h3>$89.410</h3>
+            <h4>20% OFF</h4>
+            <img src="" alt="" />
+		  </article>
+		  <article class="col-12 col-md-6 col-xl-3 d-flex flex-wrap justify-content-between">
+            <img src="materiales/images/img-cafetera-moulinex.jpg" alt="" />
+            <h3>$6.770</h3>
+            <h4>40% OFF</h4>
+            <img src="" alt="" />
+          </article>
+          <article class="col-12 col-md-6 col-xl-3 d-flex flex-wrap justify-content-between">
+            <img src="materiales/images/img-macbook-pro-2019.jpg" alt="" />
+            <h3>$150.970</h3>
+            <h4>10% OFF</h4>
+            <img src="" alt="" />
+		  </article>
+        </div>
+      </section>
+    </div>
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-4"></div>
-				<div class="col-4"></div>
-				<div class="col-4"></div>
-			</div>
-			<p></p>
-		</div>
-	</footer>
-</div>
-</body>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+          <div class="col-4"></div>
+        </div>
+        <p></p>
+      </div>
+    </footer>
+  </body>
 </html>
