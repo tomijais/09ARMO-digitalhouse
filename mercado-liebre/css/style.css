@@ -31,6 +31,10 @@ body {
   background-color: var(--color-gris-claro);
 }
 
+.container {
+  max-width: 1200px;
+}
+
 /* ==================
 - HEADER
 ================== */
@@ -163,6 +167,9 @@ section.productos h2 {
 }
 
 section.productos article {
+}
+
+div.elemento{
   background-color: white;
   border-radius: 10px;
   margin-bottom: 50px;
@@ -172,9 +179,20 @@ section.productos article {
 section.productos article img {
   width: 100%;
   border-bottom: 2px solid var(--color-gris-claro);
+  border-radius: 10px;
+
 }
 section.productos article h3 {
 }
 
 section.productos article h4 {
+}
+
+i.fa-truck{
+  display: inline-block;
+  height: 100%;
+  color: green;
+  border-radius: 50%;
+  border: 1px solid green;
+  padding: 10px;
 }
